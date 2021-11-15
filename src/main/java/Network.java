@@ -19,19 +19,27 @@ public class Network {
     }
 
     public int deviceCount(){
-        return devicesDesktop.size() + devicesPrinter.size();
+        return devices.size();
     }
 
-    public void connect(Desktop desktop){
-        devicesDesktop.add(desktop);
-    }
-
-    public void connect(Printer printer){
-        devicesPrinter.add(printer);
+    public void connect(IConnect device){
+        devices.add(device);
     }
 
     public void disconnectAll(){
-        devicesDesktop.clear();
-        devicesPrinter.clear();
+        devices.clear();
     }
+
+//    public void connect(Desktop desktop){
+//        devicesDesktop.add(desktop);
+//    }
+//
+//    public void connect(Printer printer){
+//        devicesPrinter.add(printer);
+//    }
+//
+//    public void disconnectAll(){
+//        devicesDesktop.clear();
+//        devicesPrinter.clear();
+//    }
 }
