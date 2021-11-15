@@ -1,9 +1,10 @@
+
 import java.util.*;
 
 public class Network {
     private String name;
-    private ArrayList<Desktop> devicesDesktop;
-    private ArrayList<Printer> devicesPrinter;
+    private ArrayList<IConnect> devices;
+//    private ArrayList<Printer> devicesPrinter;
 
     public Network(String name){
         this.devicesDesktop = new ArrayList<Desktop>();

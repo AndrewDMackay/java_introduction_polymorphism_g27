@@ -1,6 +1,6 @@
+
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class PrinterTest {
@@ -14,5 +14,10 @@ public class PrinterTest {
     @Test
     public void canPrint(){
         assertEquals("printing: Hello World", printer.print("Hello World"));
+    }
+
+    @Test
+    public void canConnect() {
+        assertEquals("Connecting printer to network: CodeClan.", printer.connect("CodeClan."));
     }
 }

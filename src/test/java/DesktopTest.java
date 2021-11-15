@@ -1,6 +1,6 @@
+
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class DesktopTest {
@@ -26,4 +26,8 @@ public class DesktopTest {
         assertEquals("Macbook Pro", desktop.getModel());
     }
 
+    @Test
+    public void canConnect() {
+        assertEquals("Connecting desktop to network: CodeClan.", desktop.connect("CodeClan."));
+    }
 }
